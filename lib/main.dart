@@ -894,7 +894,7 @@ class Dashboard extends StatelessWidget {
                         decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(16)),
-                          color: Colors.white,
+                          color: theme.colorScheme.primaryContainer,
                         ),
                         width: 28.w,
                         height: 13.h,
@@ -933,7 +933,7 @@ class Dashboard extends StatelessWidget {
                         decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(16)),
-                          color: Colors.white,
+                          color: theme.colorScheme.primaryContainer,
                         ),
                         width: 28.w,
                         height: 13.h,
@@ -972,7 +972,7 @@ class Dashboard extends StatelessWidget {
                         decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(16)),
-                          color: Colors.white,
+                          color: theme.colorScheme.primaryContainer,
                         ),
                         width: 28.w,
                         height: 13.h,
@@ -1121,7 +1121,7 @@ class Dashboard extends StatelessWidget {
                 ListTile(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16)),
-                  tileColor: Colors.white,
+                  tileColor: theme.colorScheme.primaryContainer,
                   leading: Container(
                     width: 12.5.w,
                     height: 12.5.w,
@@ -1165,7 +1165,7 @@ class Dashboard extends StatelessWidget {
                 ListTile(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16)),
-                  tileColor: Colors.white,
+                  tileColor: theme.colorScheme.primaryContainer,
                   leading: Container(
                     width: 12.5.w,
                     height: 12.5.w,
@@ -1209,7 +1209,7 @@ class Dashboard extends StatelessWidget {
                 ListTile(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16)),
-                  tileColor: Colors.white,
+                  tileColor: theme.colorScheme.primaryContainer,
                   leading: Container(
                     width: 12.5.w,
                     height: 12.5.w,
@@ -1352,7 +1352,7 @@ class Schedule extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 2.h),
           children: [
             Card.filled(
-              color: Colors.white,
+              color: theme.colorScheme.primaryContainer,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16)),
               // margin: ,
@@ -1571,7 +1571,7 @@ class Schedule extends StatelessWidget {
                 ],
               ),
             ),       Card.filled(
-              color: Colors.white,
+              color: theme.colorScheme.primaryContainer,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16)),
               // margin: ,

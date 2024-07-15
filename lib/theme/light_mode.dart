@@ -6,7 +6,7 @@ ThemeData lightMode = ThemeData(
   colorScheme: ColorScheme.light(
       background: const Color(0xffF8F8F8),
       surface: const Color(0xFFF8F8F8),
-      primaryContainer: Colors.grey.shade200,
+      primaryContainer: Colors.grey.shade200, 
       inversePrimary: const Color(0xFF3A855E),
       tertiary: Colors.grey,
       secondary: const Color(0xFFF9BC60), // icons
