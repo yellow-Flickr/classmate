@@ -6,7 +6,7 @@ ThemeData darkMode = ThemeData(
     colorScheme: ColorScheme.dark(
         background: Colors.grey.shade900,
         primaryContainer: Colors.grey.shade800,
-        primary: const Color(0xFFB6E1FF),
+        primary: Color.fromARGB(255, 255, 255, 255),
         tertiary: Colors.white,
         secondary: const Color(0xFF75A1D9), // icons
         inversePrimary: const Color(0xFF336699) // buttons and actions keys

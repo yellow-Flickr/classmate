@@ -631,7 +631,7 @@ class _HomeState extends State<Home> {
                     child: Icon(
                       Icons.list_alt_rounded,
                       size: 7.w,
-                      color: theme.primaryColor,
+                      color: theme.colorScheme.primary,
                       key: ValueKey<bool>(value.visible),
                     ),
                   );
@@ -649,7 +649,7 @@ class _HomeState extends State<Home> {
               children: [
                 Image.asset(
                   'assets/logo.png',
-                  color: theme.primaryColor,
+                  color: theme.colorScheme.primary,
                   width: 6.w,
                   height: 6.w,
                 ),
@@ -668,17 +668,17 @@ class _HomeState extends State<Home> {
             actions: [
               Icon(
                 Icons.notifications_active_rounded,
-                color: theme.primaryColor,
+                color: theme.colorScheme.primary,
                 size: 6.w,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 3.w),
                 child: CircleAvatar(
-                  backgroundColor: theme.primaryColor,
+                  backgroundColor: theme.colorScheme.primaryContainer,
                   radius: 3.5.w,
-                  child: const Icon(
+                  child: Icon(
                     Icons.person,
-                    color: Colors.white,
+                    color: theme.colorScheme.primary,
                   ),
                 ),
               )
@@ -824,7 +824,7 @@ class Dashboard extends StatelessWidget {
                               ),
                               const Expanded(
                                 flex: 2,
-                                child: Icon(Icons.shopping_basket,
+                                child: Icon(Icons.library_books,
                                     color: Colors.white, size: 50),
                               )
                             ],
@@ -1011,7 +1011,7 @@ class Dashboard extends StatelessWidget {
                         decoration: ShapeDecoration(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(16)),
-                          color: Colors.white,
+                          color: theme.colorScheme.primaryContainer,
                         ),
                         width: 28.w,
                         height: 13.h,
@@ -1479,7 +1479,7 @@ class Schedule extends StatelessWidget {
                                         )),
                                     // foregroundImage: NetworkImage(
                                     //     widget.groupPreview.groupMembers.last),
-                                                                
+
                                     // backgroundImage: ,
                                     child: Icon(
                                       Icons.person,
@@ -1503,10 +1503,11 @@ class Schedule extends StatelessWidget {
                                               color: const Color.fromRGBO(
                                                   224, 224, 224, 1),
                                               width: .8),
-                                          borderRadius: BorderRadius.circular(2)),
+                                          borderRadius:
+                                              BorderRadius.circular(2)),
                                       // foregroundImage: NetworkImage(
                                       //     widget.groupPreview.groupMembers.last),
-                              
+
                                       // backgroundImage: ,
                                       child: Icon(
                                         Icons.person,
@@ -1531,12 +1532,13 @@ class Schedule extends StatelessWidget {
                                               color: const Color.fromRGBO(
                                                   224, 224, 224, 1),
                                               width: .8),
-                                          borderRadius: BorderRadius.circular(2)),
+                                          borderRadius:
+                                              BorderRadius.circular(2)),
                                       // foregroundImage: NetworkImage(
                                       //     widget.groupPreview.groupMembers.last),
-                              
+
                                       // backgroundImage: ,
-                              
+
                                       child: Center(
                                         child: Text(
                                           'AR',
@@ -1551,14 +1553,20 @@ class Schedule extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(width: 2.w,),
+                            SizedBox(
+                              width: 2.w,
+                            ),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 2.w,vertical: .5.h ),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 2.w, vertical: .5.h),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: theme.primaryColor.withOpacity(.1)
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: theme.primaryColor.withOpacity(.1)),
+                              child: Text(
+                                '+14',
+                                style: theme.textTheme.bodySmall
+                                    ?.copyWith(fontWeight: FontWeight.w600),
                               ),
-                              child: Text('+14',style: theme.textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w600),),
                             )
                           ],
                         ),
@@ -1570,7 +1578,8 @@ class Schedule extends StatelessWidget {
                   )
                 ],
               ),
-            ),       Card.filled(
+            ),
+            Card.filled(
               color: theme.colorScheme.primaryContainer,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16)),
@@ -1698,7 +1707,7 @@ class Schedule extends StatelessWidget {
                                         )),
                                     // foregroundImage: NetworkImage(
                                     //     widget.groupPreview.groupMembers.last),
-                                                                
+
                                     // backgroundImage: ,
                                     child: Icon(
                                       Icons.person,
@@ -1722,10 +1731,11 @@ class Schedule extends StatelessWidget {
                                               color: const Color.fromRGBO(
                                                   224, 224, 224, 1),
                                               width: .8),
-                                          borderRadius: BorderRadius.circular(2)),
+                                          borderRadius:
+                                              BorderRadius.circular(2)),
                                       // foregroundImage: NetworkImage(
                                       //     widget.groupPreview.groupMembers.last),
-                              
+
                                       // backgroundImage: ,
                                       child: Icon(
                                         Icons.person,
@@ -1750,12 +1760,13 @@ class Schedule extends StatelessWidget {
                                               color: const Color.fromRGBO(
                                                   224, 224, 224, 1),
                                               width: .8),
-                                          borderRadius: BorderRadius.circular(2)),
+                                          borderRadius:
+                                              BorderRadius.circular(2)),
                                       // foregroundImage: NetworkImage(
                                       //     widget.groupPreview.groupMembers.last),
-                              
+
                                       // backgroundImage: ,
-                              
+
                                       child: Center(
                                         child: Text(
                                           'AR',
@@ -1770,14 +1781,20 @@ class Schedule extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            SizedBox(width: 2.w,),
+                            SizedBox(
+                              width: 2.w,
+                            ),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 2.w,vertical: .5.h ),
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 2.w, vertical: .5.h),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                color: theme.primaryColor.withOpacity(.1)
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: theme.primaryColor.withOpacity(.1)),
+                              child: Text(
+                                '+14',
+                                style: theme.textTheme.bodySmall
+                                    ?.copyWith(fontWeight: FontWeight.w600),
                               ),
-                              child: Text('+14',style: theme.textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w600),),
                             )
                           ],
                         ),
@@ -1808,9 +1825,10 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     int currentIndex = 2;
 
+    var theme = Theme.of(context);
     return SalomonBottomBar(
       currentIndex: currentIndex,
-      backgroundColor: Colors.white,
+      backgroundColor: theme.colorScheme.primaryContainer,
       unselectedItemColor: Colors.grey,
       selectedItemColor: Theme.of(context).primaryColor,
       selectedColorOpacity: 1,
